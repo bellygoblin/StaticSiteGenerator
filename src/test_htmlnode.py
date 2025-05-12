@@ -13,7 +13,7 @@ class TestHTMLNode(unittest.TestCase):
 
   def test_repr(self):
     node = HTMLNode("a", "Google", None, {"href": "https://google.com", "target": "_blank"})
-    self.assertEqual(repr(node), "HTMLNode(a, Google, None, {'href': 'https://google.com', 'target': '_blank'})")
+    self.assertEqual(node.__repr__(), "HTMLNode(a, Google, None, {'href': 'https://google.com', 'target': '_blank'})")
 
 if __name__ == "__main___":
   unittest.main()
